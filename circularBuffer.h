@@ -8,9 +8,9 @@
 //Buffer struct definition
 typedef struct {
     int *buffer; //Data array
-	  uint32_t head; //Increase after write
-	  uint32_t tail; //Increase after read
-	  uint32_t maxLen; //Total length of buffer
+    uint32_t head; //Increase after write
+	uint32_t tail; //Increase after read
+	uint32_t maxLen; //Total length of buffer
 } circularBuffer;
 
 //Function Prototypes
@@ -20,3 +20,4 @@ int circBufferRead(circularBuffer *c, int *data);
 void circBufferReset(circularBuffer *c);
 
 #endif
+
